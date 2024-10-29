@@ -13,16 +13,10 @@ set "Nombre_SQL=%AAAA%_%MM%_%DD%_%HH%_%Min%_%Seg%"
 CLS
 @ECHO EJECUTANDO CURSOR CON FACTURAS OSIGU.sql
 
-sqlcmd -i "D:\Documentos\Bofasa\ISIDRO\FACTURAS_OSIGU\CURSOR_FACTURAS_OSIGU_BAT.sql" -S 192.200.9.131 -d DB_GENESIS_CENTRAL -U earango -P bofasatest@ -o "D:\Documentos\Bofasa\ISIDRO\FACTURAS_OSIGU\CON_BAT\LOGS\FacturasOSIGUExit_%Nombre_SQL%.txt"
+sqlcmd -i "D:\Documentos\Bofasa\ISIDRO\FACTURAS_OSIGU\CURSOR_FACTURAS_OSIGU_BAT.sql" -S [ip] -d [DB_Name] -U [Usuario] -P [Pass] -o "[ubicacion de archivo]\[nombre d archivo_%Nombre_SQL%].txt"
 
 @ECHO PROCESO DE FACTURAS OSIGU TERMINADO !!!
 
 
 
 
-:: CLS
-:: @ECHO EJECUTANDO CURSOR CON FACTURAS OSIGU.sql
-:: sqlcmd -i "C:\Bofasa\ISIDRO\FACTURAS_OSIGU\CURSOR_FACTURAS_OSIGU_BAT.sql" -S 192.200.9.131 -d DB_GENESIS_CENTRAL -U earango -P bofasatest@
-:: -o "C:\Bofasa\ISIDRO\FACTURAS_OSIGU\CON_BAT\LOGS\FacturasOSIGUExit_%Nombre_SQL%.txt"
-:: @ECHO PROCESO DE FACTURAS OSIGU TERMINADO !!!
-:: PAUSE
