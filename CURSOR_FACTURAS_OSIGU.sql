@@ -1,6 +1,5 @@
 ---------------------------------------
 ------------- TABLA TEMPORAL
---DROP TABLE IF EXISTS ##VERIFICAR_FACTURAS_CURSOR
 
  IF OBJECT_ID('tempdb..##VERIFICAR_FACTURAS_CURSOR') IS NOT NULL  
  BEGIN  
